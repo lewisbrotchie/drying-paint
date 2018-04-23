@@ -3,6 +3,12 @@ import styled, { injectGlobal } from "styled-components";
 
 import "typeface-roboto";
 
+injectGlobal`
+body {
+  margin: 0;
+}
+`;
+
 const HeaderBackground = styled.img`
   margin: 0;
   height: 55%;
