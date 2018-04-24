@@ -12,17 +12,24 @@ body {
 
 const ParallaxBackground = styled.div`
   background-image: url("https://images.pexels.com/photos/8724/pexels-photo-8724.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  height: 500px;
+  background-color: white;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 300vh;
+  padding-top: 100vh;
+`;
+
+const ParallaxCurtain = styled.div`
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.8);
 `;
 
 const HeaderTagline = styled.h2`
-  /* position: absolute; 
+  position: absolute;
   top: 200px;
-  */
   left: 0;
   width: 100%;
 `;
@@ -42,17 +49,17 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ParallaxBackground />
-        <div style={{ height: "500px", backgroundColor: "spacegrey" }}>
-          <HeaderTagline>
-            <HeaderTaglineWrapper>
-              "The most exhilarating experience <Spacer />
-              <br />
-              <Spacer />of my life."
-            </HeaderTaglineWrapper>
-          </HeaderTagline>
-        </div>
-        <ParallaxBackground />
+        <ParallaxBackground>
+          <ParallaxCurtain>
+            <HeaderTagline>
+              <HeaderTaglineWrapper>
+                "The most exhilarating experience <Spacer />
+                <br />
+                <Spacer />of my life."
+              </HeaderTaglineWrapper>
+            </HeaderTagline>
+          </ParallaxCurtain>
+        </ParallaxBackground>
       </div>
     );
   }
