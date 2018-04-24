@@ -24,6 +24,7 @@ const ParallaxBackground = styled.div`
 
 const ParallaxCurtain = styled.div`
   height: 100vh;
+  text-align: center;
   background: rgba(255, 255, 255, 0.8);
 `;
 
@@ -32,11 +33,12 @@ const HeaderTagline = styled.h2`
   top: 200px;
   left: 0;
   width: 100%;
+  line-height: 200%;
 `;
 
 const HeaderTaglineWrapper = styled.span`
   color: white;
-  font: bold 24px/45px Roboto, Sans-Serif;
+  font: 24px/45px Roboto;
   letter-spacing: -1px;
   background: rgba(0, 0, 0, 0.7);
   padding: 10px;
@@ -53,9 +55,9 @@ class App extends Component {
           <ParallaxCurtain>
             <HeaderTagline>
               <HeaderTaglineWrapper>
-                "The most exhilarating experience <Spacer />
+                "The Most Exhilarating Experience <Spacer />
                 <br />
-                <Spacer />of my life."
+                <Spacer />of my Life."
               </HeaderTaglineWrapper>
             </HeaderTagline>
           </ParallaxCurtain>
