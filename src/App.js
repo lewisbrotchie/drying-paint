@@ -55,9 +55,9 @@ class App extends Component {
           <ParallaxCurtain>
             <HeaderTagline>
               <HeaderTaglineWrapper>
-                "The Most Exhilarating Experience <Spacer />
+                The Most Exhilarating Experience <Spacer />
                 <br />
-                <Spacer />of my Life."
+                <Spacer />of Your Life.
               </HeaderTaglineWrapper>
             </HeaderTagline>
           </ParallaxCurtain>
