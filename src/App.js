@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled, { injectGlobal } from "styled-components";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
 import "typeface-roboto";
 
@@ -50,19 +51,21 @@ const Spacer = styled.span`
 class App extends Component {
   render() {
     return (
-      <div>
-        <ParallaxBackground>
-          <ParallaxCurtain>
-            <HeaderTagline>
-              <HeaderTaglineWrapper>
-                The Most Exhilarating Experience <Spacer />
-                <br />
-                <Spacer />of Your Life.
-              </HeaderTaglineWrapper>
-            </HeaderTagline>
-          </ParallaxCurtain>
-        </ParallaxBackground>
-      </div>
+      <MuiThemeProvider>
+        <div>
+          <ParallaxBackground>
+            <ParallaxCurtain>
+              <HeaderTagline>
+                <HeaderTaglineWrapper>
+                  The Most Exhilarating Experience <Spacer />
+                  <br />
+                  <Spacer />of Your Life.
+                </HeaderTaglineWrapper>
+              </HeaderTagline>
+            </ParallaxCurtain>
+          </ParallaxBackground>
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
